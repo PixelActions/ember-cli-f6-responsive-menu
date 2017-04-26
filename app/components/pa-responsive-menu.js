@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-f6-responsive-menu/components/pa-responsive-menu';

@@ -1,0 +1,44 @@
+
+.pa-responsive-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+ .top-bar {
+	.logo {
+	@if variable_exists(rm-logo-max-width) {
+	  max-width: $rm-logo-max-width;
+	} @else {
+      max-width: 80px;
+    }
+	}
+}
+  .menu-icon {
+    position: absolute;
+    right: map_get($grid-column-gutter, medium);
+    @if variable_exists(top-bar-height) {
+      top: ($top-bar-height - 8px) / 2;
+    } @else {
+      top: 30px;
+    }
+  }
+  @include breakpoint(medium down) {
+    background-color: $primary-color;
+    .top-bar-right {
+      width: 100%;
+      ul {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @include breakpoint(medium only) {
+          li {
+            display: inline-block;
+
+          }
+        }
+      }
+    }
+  }
+}
+

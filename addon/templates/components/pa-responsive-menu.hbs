@@ -1,0 +1,24 @@
+<div class="top-bar">
+  <div class={{if useContainer "row column"}}>
+    {{#if logoURL}}
+    <div class="top-bar-left">
+      <div class="top-bar-title">
+        {{#link-to 'index'}}
+          <img src="{{logoURL}}" class="logo"/>
+        {{/link-to}}
+      </div>
+    </div>
+    {{/if}}
+
+    {{zf-responsive-toggle data-responsive-toggle='pa-main-menu' data-hide-for="large" showMenuTitle=false class=""}}
+
+    <div id="pa-main-menu">
+      <div class="top-bar-right">
+        <ul class="menu {{orientation}}">
+          {{yield}}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
