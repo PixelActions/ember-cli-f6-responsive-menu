@@ -14,7 +14,7 @@
 
 ### Adding the menu
 
-Add the menu in your application.hbs by supplying a list of <li> items to be your menu items. E.g:
+Add the menu in your application.hbs by supplying a list of `<li>` items to be your menu items. E.g:
 
 ```
 {{#pa-responsive-menu logoURL="/assets/img/logo.png" orientation='vertical large-horizontal' useContainer=false}}
