@@ -14,9 +14,16 @@
 
     <div id="pa-main-menu">
       <div class="top-bar-right">
-        <ul class="menu {{orientation}}">
-          {{yield}}
-        </ul>
+	    {{#if useDropdown}}
+			{{#zf-dropdown-menu class=orientation }}
+				{{yield}}
+			{{/zf-dropdown-menu }}
+		{{else}}
+			<ul class="menu {{orientation}}">
+				{{yield}}
+			</ul>
+		{{/if}}
+          
       </div>
     </div>
 

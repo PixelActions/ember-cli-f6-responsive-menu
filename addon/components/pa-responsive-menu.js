@@ -9,6 +9,6 @@ export default Ember.Component.extend({
   classNames:['pa-responsive-menu','menu-container'],
 
 
-  dropdown:false,
+  useDropdown:false,
   orientation:'vertical medium-horizontal',
 });

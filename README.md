@@ -32,7 +32,8 @@ The following parameters can be passed to the component to customize it's behavi
 
 * `logoURL`: path to the logo file
 * `orientation`: foundation-6 classes for the menu orientation (default: 'vertical medium-horizontal')
-* `useContainer`: whether to use 'row column' around the menu. (default: true)
+* `useContainer`: wether to use 'row column' around the menu. (default: true)
+* `useDropdown`: wether to treat the menu as a dropdown menu or not (default:false)
 
 For customizing the design of the menu, aside overriding css yourself, you may provide certain variable values to control the output. Make sure you place the variables prior the @import statement for the menu scss.
 
